@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Compitition</title>
+    <link rel="icon" href="google-icon.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- this is a cloud css file , and we have include tis file-->
+
+<style>
+    
+    body{
+        margin: 0;
+    }
+    #header{
+        height: 75px;
+        width: 100%;
+        /* background-color: crimson; */
+        /* box-shadow: 10px -2px 15px #000000b0; */
+    }
+    #header1{
+        height: 75px;
+        width: 72%;
+        /* background-color: antiquewhite; */
+        float: left;
+    }
+    #logo{
+        width: 110px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 1%;
+
+    }
+    #logo:hover{
+        cursor: pointer;
+    }
+    #header2{
+        height: 75px;
+        width: 20%;
+        /* background-color: darkgoldenrod; */
+        float: left;
+    }
+    #searchbar{
+        padding: 11.3px;
+        padding-left: 40px;
+        font-family: Google Sans,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 550;
+        width: 100%;
+        outline: none;
+        color: #80868b;
+        background-color: transparent;
+        margin-top: 9.5px;
+        margin-left: -15px;
+        border-radius: 6px;
+        border: 1px solid #dadce0;
+    }
+    p{
+        margin-top: -30px;
+        margin-left: -2px;
+    }
+    #header3{
+        height: 75px;
+        width: 8%;
+        /* background-color: green; */
+        float: left;
+    }
+    #signin{
+        padding: 12px 24px;
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 550;
+        color: #1a73e8;
+        letter-spacing: .2px;
+        /* font-family: inherit; */
+        background-color: transparent;
+        margin-top: 7.5px;
+        margin-left: -5px;
+    }
+    #signin:hover{
+        cursor: pointer;
+        color: #000c1f;
+    }
+
+    #content{
+        height: 450px;
+        width: 100%;
+        /* background-color: tomato; */
+        margin-top: 2%;
+    }
+    #contentLeft{
+        height: 450px;
+        width: 42%;
+        margin-left: 8%;
+        /* background-color: grey; */
+        float: left;
+    }
+    #write1{
+        /* font-size: 60px; */
+        line-height: 72px;
+        color: #202124;
+        font: 500 60px Google Sans,Arial,sans-serif;
+        letter-spacing: .28px;
+        text-align: left;
+        margin-top: 22px;
+        margin-left: 18px;
+    }
+    #write2{
+        font-size: 20px;
+        line-height: 28px;
+        color: #202124;
+        /* font-style: Google Sans,Arial,sans-serif;  */
+        font-family:Google Sans,Arial,sans-serif;
+        text-align: left;
+        margin-top: 22px;
+        margin-left: 18px;
+    }
+    #contentRight{
+        height: 450px;
+        width: 50%;
+        /* background-color: teal; */
+        float: left;
+    }
+    #cRimg{
+        width: 78%;
+        margin-left: 34px;
+        margin-top: 12px;
+    }
+    #gcom:hover{
+        cursor: pointer;
+    }
+    #codejam-hashcode-kickstart{
+        height: 80px;
+        width: 100%;
+        /* background-color: rgb(150, 100, 34); */
+
+    }
+    #code-hash-kick{
+        border: -1px solid #5f6368;
+        margin-left: 445px;
+        margin-right: 496px;
+        margin-top: 50px;
+        border-radius: 50px;
+        height: 48px;   
+        /* filter:drop-shadow(18px 8px 10px red); */
+        box-shadow: 0.5px 4px 10px #5f6368;
+        
+        
+        
+    }
+    #C-H-K{
+        margin-top: 12px;
+        padding: 10px 14px;
+        align-items: stretch;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        font-family: Google Sans,Arial,sans-serif;
+        line-height: 24px;
+        font-weight: 550; 
+        color: #5f6368;
+        
+    }
+    #c1{
+        margin-top: -10px;
+        padding: 11px 8px;
+        align-items: stretch;
+        display: flex;
+        justify-content: center;
+        border: none;
+        font-size: 16px;
+        font-family: Google Sans,Arial,sans-serif;
+        line-height: 24px;
+        font-weight: 550; 
+        color: #5f6368;
+        background-color:white;
+    }
+    #c1:hover{
+        /* cursor: pointer;
+        background-color:#dfe0e0 ;
+        border: 1px solid white; */
+        cursor: pointer;
+        background-color:#dfe0e0;
+        border: 1px solid #dfe0e0;
+        transition: color .2s ease-out,background-color .2s ease-out;
+        border:none;
+    }
+    #h1{
+        margin-top: -10px;
+        padding: 11px 8px;
+        align-items: stretch;
+        display: flex;
+        justify-content: center;
+        border: none;
+        font-size: 16px;
+        font-family: Google Sans,Arial,sans-serif;
+        line-height: 24px;
+        font-weight: 550; 
+        color: #5f6368;
+        background-color:white;
+    }
+    #h1:hover{
+        cursor: pointer;
+        background-color:#dfe0e0;
+        border: 1px solid #dfe0e0;
+        transition: color .2s ease-out,background-color .2s ease-out;
+        border:none;
+    }
+    #k1{
+        margin-top: -10px;
+        padding: 11px 8px;
+        align-items: stretch;
+        display: flex;
+        justify-content: center;
+        border: none;
+        font-size: 16px;
+        font-family: Google Sans,Arial,sans-serif;
+        line-height: 24px;
+        font-weight: 550; 
+        color: #5f6368;
+        background-color:white;
+    }
+    #k1:hover{
+        cursor: pointer;
+        background-color:#dfe0e0;
+        border: 1px solid #dfe0e0;
+        transition: color .2s ease-out,background-color .2s ease-out;
+        border:none;
+    }
+
+    #featured{
+        height: 90px;
+        width: 100%;
+        /* background-color: darkcyan; */
+    }
+    #feature_Text{
+        color: #4a4a4a;
+        letter-spacing: -.17px;
+        font: 600 42px Google Sans,Arial,sans-serif;
+        margin-left: 125px;
+    }
+    #livestream{
+        height: 530px;
+        width: 100%;
+        /* background-color:khaki; */
+        margin-top: 10px;
+    }
+    
+    #livestream-left{
+        height: 529px;
+        width: 40%;
+        /* background-color: rgb(224, 168, 168); */
+        float: left;
+        margin-left: 9%;
+        border-top: 1px solid #dadce0; 
+        border-left: 1px solid #dadce0;
+        border-bottom: 1px solid #dadce0;  
+        border-radius: 8px;
+    }
+    #live1{
+        /* text-transform: uppercase; */
+        font-weight: 600;
+        font-family: Roboto,sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+        color: #5f6368;
+        letter-spacing: normal;
+        margin-top: 45px;
+        margin-left: 53px;
+    }
+    /* #on_demand{
+        color: #1a73e8;
+        font-family: Google Sans,Arial,sans-serif;
+        font-size: 8.5px;
+        font-weight: 600;
+        min-height: 15px;
+        letter-spacing: normal;
+        line-height: 10px;
+        padding-left: 24px;;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        position: relative;
+        text-transform: none;
+        border: 8px solid transparent ;
+        border-radius: 20px;
+        background-color: #e8f0fe;
+        margin-right: 270px;
+        margin-left: 100px;
+        margin-top: -39px;
+    }
+    #small{
+        margin-left: 1px;
+    } */
+    #on_demand {
+        height: 24px;
+        width: 23%;
+        background-color: #e8f0fe;
+        border: 0.5px solid #e8f0fe;
+        border-radius: 20px;
+        display: block;
+        margin-top: -21px;
+        cursor: pointer;
+        margin-left: 106px;
+    }
+    .demand{
+        color: blue;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 31px;
+    }
+    .small1{
+        margin-left: 7px;
+        margin-top: -25px;
+    }
+    .ondemandtxt {
+        margin-top: -17px;
+        margin-left: 30px;
+        color: #1a73e8;
+    }
+
+
+
+
+    #on_demand11 {
+        /* height: 24px;
+        width: 23%;
+        background-color: #e8f0fe;
+        border: 0.5px solid #e8f0fe;
+        border-radius: 20px;
+        display: block;
+        margin-top: -21px;
+        cursor: pointer;
+        margin-left: 106px; */
+        height: 25px;
+        width: 45%;
+        background-color: #e8f0fe;
+        border: 0.5px solid #e8f0fe;
+        border-radius: 20px;
+        display: block;
+        margin-top: 3px;
+        cursor: pointer;
+        margin-left:130px;
+    }
+    .demand11{
+        /* color: blue;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 31px; */
+        color: blue;
+        margin-top: 3px;
+        padding-bottom: 1px;
+        padding-left:40px;
+    }
+    .small11{
+        /* margin-left: 7px;
+        margin-top: -25px; */
+        margin-left: 7px;
+        margin-top:-16px;
+    }
+    .ondemandtxt11 {
+        /* margin-top: -17px;
+        margin-left: 30px;
+        color: #1a73e8; */
+        margin-top: -22px;
+        margin-left: 34px;
+        color:#1a73e8;
+    }
+
+    .j1{
+        position: relative;
+        font: 500 20px Google Sans,Arial,sans-serif;
+        line-height: 28px;
+        max-height: 112px;
+        color: #202124;
+        margin-bottom: 4px;
+        margin-left: 15px;
+        margin-top: 10px;
+        font-weight: 550;
+    }
+    #j2{
+        position: relative;
+        font: 500 20px Google Sans,Arial,sans-serif;
+        line-height: 28px;
+        max-height: 112px;
+        color: #202124;
+        margin-bottom: 4px;
+        margin-left: 15px;
+        margin-top: 10px;
+        font-weight: 550;
+    }
+    #j3{
+        position: relative;
+        font: 500 20px Google Sans,Arial,sans-serif;
+        line-height: 28px;
+        max-height: 112px;
+        color: #202124;
+        margin-bottom: 4px;
+        margin-left: 15px;
+        margin-top: 10px;
+        font-weight: 550;
+    }
+    
+    #livestream-right{
+        height: 529px;
+        width: 40%;
+        /* background-color:rgb(168, 73, 73); */
+        float: left;
+        margin-right: 9%;
+        border-top: 1px solid #dadce0; 
+        border-right: 1px solid #dadce0;
+        border-bottom: 1px solid #dadce0; 
+        border-radius: 8px; 
+    }
+    .text1{
+        margin-top: 10px;
+        margin-left: 51px;
+        font-size: 32px;
+        line-height: 42px;
+        font-family: Google Sans,Arial,sans-serif;
+        color: #4a4a4a;
+        font-weight: 550;
+    }
+    .text2{
+        margin-left: 51px;
+        color: #5f6368;
+        font: 400 14px Roboto,sans-serif;
+        line-height: 21px;
+        margin-top: -12px;
+    }
+    .button-26 {
+        appearance: button;
+        /* background-color: #1652F0; */
+        background-color:#4285f4;
+        border: 1px solid #4285f4;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        /* font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif; */
+        font-family: Google Sans,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 550;
+        line-height: 1.15;
+        overflow: visible;
+        padding: 12px 24px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        transition: all 80ms ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: fit-content;
+        margin-left: 51px;
+        margin-top: 18px;
+}
+
+.button-26:disabled {
+  opacity: .5;
+}
+
+.button-26:focus {
+  outline: 0;
+}
+
+.button-26:hover {
+  background-color: #1a73e8;
+  border-color:#1a73e8;
+}
+
+.button-26:active {
+  background-color: #4285f4;
+  border-color: #4285f4;
+}
+    .mic{
+        height: 529px;
+        width: 100%;
+        border-top: 1px solid #dadce0; 
+        border-right: 1px solid #dadce0;
+        border-bottom: 1px solid #dadce0;  
+        border-radius: 8px; 
+    }
+    .mic:hover{
+        cursor: pointer;
+    }
+    #codejam{
+        height: 70px;
+        width: 100%;
+        /* background-color: rgb(94, 141, 141); */
+        margin-top: 10px; 
+    }
+    #codejamtxt{
+        color: #4a4a4a;
+        letter-spacing: -.17px;
+        font: 600 48px Google Sans,Arial,sans-serif;
+        margin-left: 125px;
+        margin-top: 130px;
+    }
+    #after-codejam{
+        height: 400px;
+        width: 100%;
+        /* background-color:rgb(250, 169, 69); */
+        margin-top: 10px;
+    }
+    #after-codejam1{
+        height: 370px;
+        width: 20%;
+        /* background-color:rgb(156, 96, 16); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 9%;
+    }
+    #after-codejam1:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    .flex1{
+        width:100%;
+    }
+    
+    
+    #after-codejam2{
+        height: 370px;
+        width: 20%;
+        /* background-color:rgb(156, 96, 16); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 1%;
+    }
+    #after-codejam2:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    .flex2{
+        width:100%;
+    }
+    #after-codejam3{
+        height: 370px;
+        width: 20%;
+        /* background-color:rgb(156, 96, 16); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 1%;
+    }
+    #after-codejam3:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    .flex3{
+        width:100%;
+    }
+    #hashcode{
+        height: 70px;
+        width: 100%;
+        /* background-color: rgb(168, 218, 33); */
+        margin-top: -30px; 
+    }
+    #hashtext{
+        color: #4a4a4a;
+        letter-spacing: -.17px;
+        font: 600 48px Google Sans,Arial,sans-serif;
+        margin-left: 125px;
+        margin-top: 130px
+    }
+
+    #after-hashcode{
+        height: 400px;
+        width: 100%;
+        /* background-color:rgb(60, 63, 16); */
+        margin-top: 10px;
+    }
+    #after-hashcode1{
+        height: 370px;
+        width: 19%;
+        /* background-color:rgb(72, 78, 0); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 9%;
+        float: left;
+    }
+    #after-hashcode1:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    .flex11{
+        width: 100%;
+    }
+    
+    #after-hashcode2{
+        height: 370px;
+        width: 19%;
+        /* background-color:rgb(72, 78, 0); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 1%;
+        float: left;
+    }
+    #after-hashcode2:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    #after-hashcode3{
+        height: 370px;
+        width: 19%;
+        /* background-color:rgb(72, 78, 0); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 1%;
+        float: left;
+    }
+    #after-hashcode3:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    #after-hashcode4{
+        height: 370px;
+        width: 19%;
+        /* background-color:rgb(72, 78, 0); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 1%;
+        float: left;
+        
+    }
+    #after-hashcode4:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+
+    #kickstart{
+        height: 70px;
+        width: 100%;
+        /* background-color: rgb(77, 160, 39); */
+        margin-top: -30px; 
+    }
+    #kickstarttext{
+        color: #4a4a4a;
+        letter-spacing: -.17px;
+        font: 600 48px Google Sans,Arial,sans-serif;
+        margin-left: 125px;
+        margin-top: 130px
+    }
+
+    #after-kickstart{
+        height: 400px;
+        width: 100%;
+        /* background-color:rgb(16, 63, 18); */
+        margin-top: 10px;
+    }
+    #after-kickstart1{
+        height: 370px;
+        width: 19%;
+        /* background-color:rgb(43, 44, 33); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 9%;
+        float: left;
+    }
+    #after-kickstart1:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    #after-kickstart2{
+        height: 370px;
+        width: 19%;
+        /* background-color:rgb(43, 44, 33); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 1%;
+        float: left;
+    }
+    #after-kickstart2:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    #after-kickstart3{
+        height: 370px;
+        width: 19%;
+        /* background-color:rgb(43, 44, 33); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 1%;
+        float: left;
+    }
+    #after-kickstart3:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+    #after-kickstart4{
+        height: 370px;
+        width: 19%;
+        /* background-color:rgb(43, 44, 33); */
+        border: 1px solid #dadce0; 
+        border-radius: 8px;
+        float: left;
+        margin-left: 1%;
+        float: left;
+        
+    }
+    #after-kickstart4:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        box-shadow: 0.5px 3px 10px #5f6368;
+    }
+
+    .hashtxt {
+    width: 150px;
+    margin-bottom: -27px;
+    margin-top: 19px;
+    margin-left: 10px;
+    /* color: #8f8585; */
+    /* font-size: 0.9rem; */
+    font-weight:550;
+    font-family: Roboto,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5f6368;
+    letter-spacing: normal;
+    }
+
+    .addicon{
+        margin-top: 12px;
+        margin-left:610px;
+        font-size: 22px;
+        color: #8e8e8e;
+        font-weight: 900;
+    }
+    .show1{
+        margin-top: -21px;
+        margin-left: 630px;
+        font-size: 14px;
+        color: #8e8e8e;
+        font-family: Google Sans,Arial,sans-serif;
+        font-weight: 600;
+    }
+    
+    .show1:hover{
+        color: #9e9e9e;
+        cursor:pointer;
+    }
+    #share{
+        height: 150px;
+        width: 100%;
+        /* background-color:slateblue; */
+        margin-top: 200px;
+    }
+    #sharetxt1{
+        font-family: Google Sans,Arial,sans-serif;
+        margin-left: 400px;
+        font-size: 48px;
+        font-weight:550;
+        color: #4a4a4a;
+    }
+    #sharetxt2{
+        color: #4285f3;
+        margin-left: 300px;
+        font-family:"Google Sans", Arial, sans-serif;
+        font-size: 48px; ;
+        font-weight:550;
+    }
+    #sharetxt2:hover{
+        color: #1a73e8;
+        cursor: pointer;
+    }
+    #tweet-in-fb{
+        height: 60px;
+        width: 100%;
+        /* background-color:slategray; */
+        margin-top: 2px;
+    }
+
+    .tw{
+        font-size: 3rem;
+        margin-left: 536px;
+        color: #4a4a4a;
+    }
+    .tw:hover{
+        cursor: pointer;
+        color: #1a73e8;
+    }
+    .ld {
+        font-size: 3rem;
+        margin-top: -49px;
+        margin-left: 659px;
+        color: #4a4a4a;
+    }
+    .ld:hover{
+        cursor: pointer;
+        color: #1a73e8;
+    }
+    .fb {
+        font-size: 3rem;
+        margin-top: -57px;
+        margin-left: 777px;
+        color: #4a4a4a;
+    }
+    .fb:hover{
+        cursor: pointer;
+        color:#1a73e8;
+    }
+
+    #footer{
+            /* height: 196px;
+            width: 100%;
+            background-color: tan;
+            margin-top: 150px; */
+            height: 127px;
+            width: 100%;
+            background-color: #f8f9fa;
+            float: left;
+            border: 0.5px #f8f9fa;
+            display: block;
+            margin-top: 139px;
+            margin-right: 10px;
+            margin-bottom: -3px;
+            margin-left: 0px;
+            width: cover;
+
+        } 
+    .ff{
+        margin-left: -160px;
+        margin-top: -27px;
+    }
+    .f1 {
+    margin-left: 253px;
+    margin-top: 71px;
+    font-size: 22px;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: 600;
+    cursor: pointer;
+    }
+
+.f2 {
+    margin-left: 383px;
+    margin-top: -60px;
+    font-size: 0.9rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: 500;
+    cursor: pointer;
+}
+.f3 {
+    margin-left: 496px;
+    margin-top: -50px;
+    font-size: 0.9rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: 500;
+    cursor: pointer;
+}
+.f4 {
+    margin-left: 634px;
+    margin-top: -49px;
+    font-size: 0.9rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.f5 {
+    margin-left: 719px;
+    margin-top: -49px;
+    font-size: 0.9rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: 500;
+    cursor: pointer;
+}
+.f6 {
+    margin-left: 1128px;
+    margin-top: -43px;
+    font-size: 0.5rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: bold;
+    cursor: pointer;
+}
+.f7 {
+    margin-left: 1167px;
+    margin-top: -23px;
+    font-size: 1.0rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: bold;
+    cursor: pointer;
+}
+.f8 {
+    margin-left: 1224px;
+    margin-top: -35px;
+    font-size: 1.0rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    cursor: pointer;
+}
+.f9 {
+    margin-left: 1305px;
+    margin-top: -50px;
+    font-size: 0.7rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: 500;
+    
+}
+.f10 {
+    margin-left: 1390px;
+    margin-top: -28px;
+    font-size: 1.0rem;
+    font-family: Google Sans,Arial,sans-serif;
+    color: #5f6368;
+    font-weight: 600;
+}
+.f2:hover{
+    cursor: pointer;
+    color: black;
+}
+.f3:hover{
+    cursor: pointer;
+    color: black;
+}
+.f4:hover{
+    cursor: pointer;
+    color: black;
+}
+.f5:hover{
+    cursor: pointer;
+    color:black;
+} 
+
+</style>
+</head>
+<body>
+    <div id="header">
+        <div id="header1"><img src="google_logo.png" alt="_blank" id="logo"></div>
+        <div id="header2">
+            <input type="search"  placeholder="Search for events" id="searchbar">
+            <p><img src="search.png" alt="_blank"></p>
+        </div>
+        <div id="header3">
+            <button id="signin">Sign in</button>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="contentLeft">
+            <div id="write1">Competitions <font color="#DB4437">OnAir</font> </div>
+             <div id="write2">Whether you're new to coding competitions or a seasoned <br>competitor, Competitions OnAir will help you learn about <br> Google's Coding Competitions, grow your skills, and connect <br> with a global community of developers. Register for <br>upcoming livestreams or watch previously-aired events on <br>demand below.
+               <br><br> Learn more about Google's Coding Competitions and register <br>today at <font color="#448aff"><u id="gcom">g.co/codingcompetitions</u></font>!
+            </div>  
+        </div> 
+        <div id="contentRight"><img src="Screenshot.png" alt="_blank" id="cRimg"></div>
+    </div>
+    
+    <div id="codejam-hashcode-kickstart">
+        <div id="code-hash-kick">
+            <div id="C-H-K">
+            <button id="c1">Code Jam</button> &nbsp;&nbsp;&nbsp;&nbsp; <button id="h1">Hash Code</button> &nbsp;&nbsp;&nbsp;&nbsp; <button id="k1">Kick Start</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="featured">
+        <div id="feature_Text">Featured</div>
+    </div>
+
+    <div id="livestream">
+            <div id="livestream-left">
+                <div id="live1" >
+                    1 YEAR AGO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- <div id="small"><img src="small.png" alt="_blank"></div>
+                    <button id="on_demand">On demand</button> 
+                    <div id="on_demand">On demand</div> -->
+                    <div id="on_demand"><p class="demand">
+                        <div class="small1"><img src="small.png"></div>
+                        <p class="ondemandtxt">On demand</p>
+                    </div>              
+                </div>
+                <div id="live2" >
+                    <p class="text1">2022 Code Jam World Finals <br> Livestream</p>
+                    <p class="text2" >On August 5, 2022, top programmers from around the world will <br>compete virtually for the championship title and grand prize of $15,000 <br>USD at the 2022 Code Jam World Finals. 
+                    <br><br>
+                    Watch all the action unfold as the Code Jam team broadcasts live from <br> Google New York. You'll have an opportunity to hear from our team, see <br>Code Jam engineers explain the problems from the round, and watch <br> live as we reveal the scoreboard and announce this year's winners! 
+                    <br><br>
+                    Good luck to all the finalists and as always, happy coding!
+                </p>
+                </div>
+                <div id="live3">
+                    <button class="button-26" role="button">Register</button>
+                </div>
+            </div>
+            <div id="livestream-right">
+                <img src="mic.png" alt="_blank" class="mic">
+            </div>   
+    </div>
+
+    <div id="codejam">
+        <div id="codejamtxt">Code Jam</div>
+    </div>
+
+    <div id="after-codejam">
+        <div id="after-codejam1">
+            <img src="flex1.png" alt="_blank" class="flex1">
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1">2022 Code Jam World <br>Finals Livestream</div>
+        </div>
+        <div id="after-codejam2">
+            <img src="flex2.png" alt="_blank" class="flex2">
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div id="j2">Code Jam 2021 World <br>Finals Livestream & <br> Scoreboard Reveal</div>
+        </div>
+        <div id="after-codejam3">
+            <img src="flex3.png" alt="_blank" class="flex3">
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div id="j3">Code Jam 2020 World <br>Finals Livestream & <br>Scoreboard Reveal</div>
+        </div>
+    </div>
+   <div id="hashcode">
+    <div id="hashtext">Hash Code</div>
+   </div>
+
+   <div id="after-hashcode">
+        <div id="after-hashcode1">
+            <img src="flex11.png" alt="_blank" class="flex11">
+            <p  class="hashtxt">1 YEAR AGO</p>
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1">Hash Code 2022 <br> Qualification Round <br>Livestream</div>
+        </div>
+        <div id="after-hashcode2">
+            <img src="flex22.png" alt="_blank" class="flex11">
+            <p  class="hashtxt">2 YEARS AGO</p>
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1">Hash Code Problem Development</div>
+        </div>
+        <div id="after-hashcode3">
+            <img src="flex33.png" alt="_blank" class="flex11">
+            <p  class="hashtxt">2 YEARS AGO</p>
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1">Hash Code 2021 World Finals Awards Ceremony</div>
+        </div>
+        <div id="after-hashcode4">
+            <img src="flex44.png" alt="_blank" class="flex11">
+            <p  class="hashtxt">2 YEARS AGO</p>
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1">Hash Code 2021 Online Qualifications Livestream</div>
+        </div>
+   </div>
+
+   <div id="kickstart">
+    <div id="kickstarttext">Kick Start</div>
+   </div>
+
+   <div id="after-kickstart">
+        <div id="after-kickstart1">
+            <div class="flex1"><img src="flex111.png" alt="_blank"></div>
+            <p  class="hashtxt">1 YEAR AGO</p>
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1">Coding Practice with Kick Start 2022</div>
+        </div>
+        <div id="after-kickstart2">
+            <div class="flex1"><img src="flex111.png" alt="_blank"></div>
+            <p  class="hashtxt">2 YEARS AGO</p>
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1">Coding Practice with Kick Start APAC</div>
+        </div>
+        <div id="after-kickstart3">
+            <div class="flex1"><img src="flex222.png" alt="_blank"></div>
+            <p  class="hashtxt">2 YEARS AGO</p>
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1"> Passport to Google Presents: Coding Practice with Kick Start</div>
+        </div>
+        <div id="after-kickstart4">
+            <div class="flex1"><img src="flex333.png" alt="_blank"></div>
+            <div id="on_demand11"><p class="demand11">
+                <div class="small11"><img src="small.png"></div>
+                <p class="ondemandtxt11">On demand</p>
+            </div> 
+            <div class="j1"> Kick Start Platform and Problem Tutorial</div>
+        </div>
+   </div>
+
+
+   <div class="moreoption">
+
+    <div class="addicon">
+        <i class="fa-duotone fa-plus fa-xl"></i>      
+    </div>
+    <div class="show"><p class="show1">Show more</p></div>
+    </div>
+
+
+   <div id="share"> 
+    <div id="sharetxt1">
+        Share with your friends!
+    </div>
+    <div id="sharetxt2">
+        #CodeJam #HashCode #KickStart
+    </div>
+
+    </div>
+
+   <div id="tweet-in-fb">
+    <div class="tw"><i class="fa-brands fa-twitter"></i></div>
+    <div class="ld">
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <div class="fb">
+        <i class="fa-brands fa-square-facebook"></i></i>
+    </div>
+
+   </div>
+
+    <div id="footer">
+
+        <div class="ff">
+            <p class="f1" >Google </p> &nbsp;&nbsp;&nbsp;
+            <p class="f2">About Google </p>&nbsp;&nbsp;&nbsp;
+            <p class="f3">Google products </p>&nbsp;&nbsp;&nbsp;
+            <p class="f4">Privacy </p>&nbsp;&nbsp;&nbsp;
+            <p class="f5">Terms </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p class="f6">BUILT ON</p>
+            <p class="f7">Google</p>
+            <p class="f8">Cloud</p>&nbsp;&nbsp;&nbsp;
+            <p class="f9">Withsupport from</p>
+            <p class="f10">YouTube</p>&nbsp;&nbsp;&nbsp;
+        </div>
+
+    </div>
+
+
+</body>
+</html>
